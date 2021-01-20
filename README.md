@@ -15,7 +15,7 @@ src/redis-server --protected-mode no
 ps -ef | grep redis | grep :6379 | awk '{print $2}' | xargs kill
 
 #client
-
+src/redis-cli -h node09 -p 6379
 src/redis-cli -h <host> -p 6379
   
 #commands
